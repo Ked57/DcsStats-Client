@@ -1,0 +1,36 @@
+package controller;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+
+public class Main extends Application {
+
+	private BorderPane rootLayout;
+
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/root.fxml"));
+			rootLayout = loader.load();
+			RootController rootController = loader.getController();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		Scene scene = new Scene(rootLayout, 700, 350);
+		primaryStage.setScene(scene);
+		primaryStage.setMaxWidth(700);
+		primaryStage.setMinWidth(700);
+		primaryStage.setMaxHeight(350);
+		primaryStage.setMinHeight(350);
+		primaryStage.show();
+
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

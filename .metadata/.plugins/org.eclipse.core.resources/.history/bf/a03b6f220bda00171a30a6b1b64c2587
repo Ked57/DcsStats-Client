@@ -1,0 +1,8 @@
+package controller;
+
+public class RootController {
+	
+	public void initialize(){
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/launch.fxml"));
+	}
+}
