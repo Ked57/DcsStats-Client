@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane prefHeight="350.0" prefWidth="750.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="controller.MainController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="109.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="641.0" minWidth="10.0" prefWidth="641.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTextArea fx:id="console" GridPane.columnIndex="1" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Installation status">
+                     <padding>
+                        <Insets left="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="installationLabel" text="installed" textFill="#077c13">
+                     <padding>
+                        <Insets left="15.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="DcsStats servers">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="serverLabel" text="online" textFill="#077c13">
+                     <VBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="installButton" alignment="CENTER" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #CECECE;" text="Install">
+                     <VBox.margin>
+                        <Insets left="10.0" top="50.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

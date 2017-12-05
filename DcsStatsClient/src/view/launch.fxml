@@ -24,7 +24,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton id="connectionButton" fx:id="connectionButton" style="-fx-border-color: #CECECE; -fx-background-color: #CECECE;" text="Log In" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <JFXButton id="connectionButton" fx:id="connectionButton" onAction="#connectionButtonOnAction" style="-fx-border-color: #CECECE; -fx-background-color: #CECECE;" text="Log In" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
             <JFXPasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <JFXTextField GridPane.columnIndex="1" />
             <Label text="Username">

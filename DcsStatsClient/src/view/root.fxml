@@ -6,10 +6,12 @@
 
 <BorderPane fx:id="rootPane" maxHeight="350.0" maxWidth="700.0" minHeight="350.0" minWidth="700.0" prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootController">
    <top>
-      <HBox maxHeight="29.0" minHeight="29.0" prefHeight="29.0" prefWidth="700.0" style="-fx-border-color: #CECECE;" BorderPane.alignment="CENTER">
+      <HBox fx:id="buttonBox" maxHeight="29.0" minHeight="29.0" prefHeight="29.0" prefWidth="700.0" style="-fx-border-color: #CECECE;" BorderPane.alignment="CENTER">
          <children>
             <JFXButton fx:id="logInButton" style="-fx-border-color: #CECECE;" text="Log in" />
             <JFXButton fx:id="registerButton" style="-fx-border-color: #CECECE;" text="Register" />
+            <JFXButton fx:id="optionsButton" style="-fx-border-color: #CECECE;" text="Options" />
+            <JFXButton fx:id="logOutButton" onAction="#logoutOnAction" style="-fx-border-color: #CECECE;" text="Log out" />
          </children>
       </HBox>
    </top>
